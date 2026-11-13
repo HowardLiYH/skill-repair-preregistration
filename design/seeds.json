@@ -1,0 +1,7 @@
+{
+ "test_order_and_dev_arm_order_seed": 20261111,
+ "bootstrap_seed": 5300,
+ "bootstrap_resamples": 10000,
+ "power_simulation_seed": 20261112,
+ "selector_version": "n21-2026-11-12"
+}

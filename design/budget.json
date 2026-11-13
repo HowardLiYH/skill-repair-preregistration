@@ -1,0 +1,12 @@
+{
+ "api_cap_usd_cumulative": 19,
+ "hosting_cap_usd_cumulative": 31,
+ "approved": "2026-11-12, by the owner",
+ "planned_agent_runs_max": {
+  "calibration": 35,
+  "dev": 252,
+  "test": 306,
+  "total": 593
+ },
+ "note": "Infrastructure replacements and editor calls are counted separately; caps are cumulative, including the first study and the pilot."
+}

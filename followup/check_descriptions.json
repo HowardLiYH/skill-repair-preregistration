@@ -1,0 +1,107 @@
+{
+ "_about": "AI-written (Claude), November 12, 2026. Short descriptions of PRACTICE checks only, derived from the practice task instructions (milestone 1/data/dev/tasks/*/instruction.md) and the check's own name; no expected values, no held-out test checks. Frozen before the pilot. Identical for both arms; repair alone also receives which checks passed or failed, failure categories and the agent's own trace.",
+ "earthquake-plate-calculation": {
+  "test_output_file_and_structure": "The answer file exists at the required path and contains a single JSON object with all the required fields.",
+  "test_earthquake_id_correct": "The earthquake identifier selected is the one the task asks for.",
+  "test_place_correct": "The location description matches the selected earthquake.",
+  "test_time_correct": "The timestamp matches the selected earthquake and uses the required ISO 8601 format.",
+  "test_magnitude_within_tolerance": "The magnitude matches the selected earthquake within a tolerance.",
+  "test_latitude_within_tolerance": "The epicenter latitude matches the selected earthquake within a tolerance.",
+  "test_longitude_within_tolerance": "The epicenter longitude matches the selected earthquake within a tolerance.",
+  "test_distance_within_tolerance": "The computed distance to the plate boundary, in kilometres and rounded as instructed, is within a tolerance."
+ },
+ "financial-analysis": {
+  "test_file_exists": "The answers file exists at the required path.",
+  "test_answer_quality": "The answers to the questions follow the required schema and are correct."
+ },
+ "schedule-planning": {
+  "test_outputs": "One reply file is written per request email, following the reply template with the proposed date, time range and duration in the required formats.",
+  "test_email_recipients": "A results file lists one entry per request email with the correct recipient."
+ },
+ "weighted-gdp-calculation": {
+  "test_excel_file_exists": "The workbook exists at the required path.",
+  "test_excel_file_readable": "The workbook opens as a valid Excel file.",
+  "test_file_extension_xlsx": "The workbook keeps the .xlsx format.",
+  "test_required_sheets_exist": "The original sheets are present.",
+  "test_no_extra_sheets_added": "No sheets were added beyond the original ones.",
+  "test_sheet_structure": "The layout of the sheets is unchanged.",
+  "test_no_vba_macros": "The workbook contains no macros or VBA code.",
+  "test_task_sheet_column_widths": "Column widths on the Task sheet are unchanged (original formatting kept).",
+  "test_data_sheet_column_widths": "Column widths on the Data sheet are unchanged (original formatting kept).",
+  "test_no_formula_errors": "No cell shows a formula error.",
+  "test_exports_have_data": "The exports cell range is filled.",
+  "test_imports_have_data": "The imports cell range is filled.",
+  "test_gdp_have_data": "The GDP cell range is filled.",
+  "test_exports_values": "The looked-up export values are correct for each country and year.",
+  "test_imports_values": "The looked-up import values are correct for each country and year.",
+  "test_gdp_values": "The looked-up GDP values are correct for each country and year.",
+  "test_net_exports_pct_have_data": "The net-exports-as-percent-of-GDP range is filled.",
+  "test_net_exports_pct_values": "Net exports as a percent of GDP are correct and rounded as instructed.",
+  "test_statistics_have_data": "The summary statistics cells are filled.",
+  "test_min_values": "The minimum values are correct.",
+  "test_max_values": "The maximum values are correct.",
+  "test_median_values": "The median values are correct.",
+  "test_mean_values": "The simple mean values are correct.",
+  "test_percentile_values": "The 25th and 75th percentile values are correct.",
+  "test_weighted_mean_has_data": "The weighted mean cells are filled.",
+  "test_weighted_mean_values_reasonable": "The weighted mean values are within a plausible range.",
+  "test_weighted_mean_values": "The weighted mean values are correct and rounded as instructed."
+ },
+ "_about_confirmatory": "AI-written (Claude), November 12, 2026, for the 7 confirmatory families: practice checks only, from the practice task instructions and each check's own name; no expected values, no held-out test checks. Frozen with the pre-registration. Identical for both arms. Parametrized checks share their function's description.",
+ "anthropic-poster-design": {
+  "test_files_exist": "The poster image and the design-parameters file exist at the required paths.",
+  "test_design_parameters_exact_schema_and_values": "The design-parameters file has exactly the required keys, with the brand colours as valid hex values.",
+  "test_heading_font_matches_expected_corporate_font": "The recorded heading font is the brand's corporate font.",
+  "test_declared_brand_hexes_actually_appear_in_image": "Every brand colour declared in the parameters file actually appears in the image.",
+  "test_background_color_detected_in_image": "The declared background colour dominates the image, including its corners.",
+  "test_minimalist_low_saturation_and_no_neon": "The image is low-saturation and has no neon-like areas."
+ },
+ "chinese-poem-generator": {
+  "test_poem_file_exists": "The poem file exists at the required path.",
+  "test_poem_has_title": "The first non-empty line is a title.",
+  "test_qilv_has_8_body_lines": "The body after the title has exactly 8 lines.",
+  "test_each_body_line_has_7_chinese_characters": "Every body line has exactly 7 Chinese characters.",
+  "test_poem_body_matches_one_strict_qilv_form": "The body follows one strict seven-character regulated-verse tone pattern and rhyme scheme.",
+  "test_report_matched_form_when_successful": "When the form matches, it is one of the recognised regulated-verse forms."
+ },
+ "court-form-filling": {
+  "test_output_file_valid": "The filled form is saved at the required path as a valid PDF.",
+  "test_content_present": "The fields required by the case description are filled with the case's information.",
+  "test_checkbox_value": "The checkboxes that the case description implies are checked.",
+  "test_checkbox_unchecked": "Checkboxes that should stay unchecked are not checked.",
+  "test_field_empty": "Court-filled, optional or unmentioned fields are left empty."
+ },
+ "enterprise-information-search": {
+  "test_inputs_exist": "The data and question files are present.",
+  "test_answer_structure_and_values": "The answer file is a dict with one entry per question, each with an 'answer' list that covers the correct items.",
+  "test_tokens_efficient": "Each question's entry has a numeric 'tokens' field."
+ },
+ "offer-letter-generator": {
+  "test_no_remaining_placeholders": "No template placeholders remain in the filled letter.",
+  "test_split_placeholder_replaced": "Placeholders split across text runs are replaced with the employee's data.",
+  "test_repeated_placeholders_replaced_everywhere": "Placeholders that appear several times are replaced everywhere.",
+  "test_nested_table_value": "Placeholders inside tables are replaced.",
+  "test_additional_required_field_present": "Additional required fields from the employee data appear in the letter.",
+  "test_header_footer_value": "Placeholders in headers and footers are replaced.",
+  "test_conditional_section": "The conditional relocation section is kept or removed as the employee data requires, without its markers."
+ },
+ "travel-planning": {
+  "test_plan_file_exists": "The itinerary file exists at the required path.",
+  "test_plan_structure_and_length": "The itinerary has the required top-level structure and the requested number of days.",
+  "test_plan_required_fields_and_days": "Every day has all required fields and the correct day number.",
+  "test_no_flights_in_transportation": "No day's transportation uses a flight.",
+  "test_starts_in_minneapolis": "The trip starts from the requested departure city.",
+  "test_visits_at_least_three_cities": "The trip covers at least the requested number of cities.",
+  "test_visits_ohio_cities": "The visited cities are in the requested state.",
+  "test_pet_friendly_accommodation_hint": "Accommodation is marked as suitable for the pet.",
+  "test_meals_include_requested_cuisines": "Meals cover the requested cuisines.",
+  "test_attractions_non_empty": "Attractions are listed.",
+  "test_data_sources_present": "The data sources list names the dataset files used.",
+  "test_attractions_rule_with_day4_exception": "Attractions follow the per-day rule given in the instructions."
+ },
+ "video-object-counting": {
+  "test_key_frames_exists": "Key frames were extracted into the required folder.",
+  "test_grayscale_applied": "The extracted key frames were converted to grayscale in place.",
+  "test_counting_results": "The results CSV has the required columns and correct counts per frame."
+ }
+}

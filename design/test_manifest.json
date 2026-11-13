@@ -1,0 +1,33 @@
+{
+ "anthropic-poster-design": {
+  "anthropic-poster-design-4": 5,
+  "anthropic-poster-design-5": 6
+ },
+ "chinese-poem-generator": {
+  "chinese-poem-generator-4": 6,
+  "chinese-poem-generator-5": 6
+ },
+ "court-form-filling": {
+  "court-form-filling-4": 47,
+  "court-form-filling-5": 50,
+  "court-form-filling-6": 47
+ },
+ "enterprise-information-search": {
+  "enterprise-information-search-4": 4,
+  "enterprise-information-search-5": 4,
+  "enterprise-information-search-6": 4
+ },
+ "offer-letter-generator": {
+  "offer-letter-generator-4": 29,
+  "offer-letter-generator-5": 29,
+  "offer-letter-generator-6": 25
+ },
+ "travel-planning": {
+  "travel-planning-4": 11,
+  "travel-planning-5": 11
+ },
+ "video-object-counting": {
+  "video-object-counting-4": 3,
+  "video-object-counting-5": 3
+ }
+}

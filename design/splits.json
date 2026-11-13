@@ -1,0 +1,96 @@
+{
+ "anthropic-poster-design": {
+  "calibration": [
+   "anthropic-poster-design-1"
+  ],
+  "practice": [
+   "anthropic-poster-design-2",
+   "anthropic-poster-design-3"
+  ],
+  "test": [
+   "anthropic-poster-design-4",
+   "anthropic-poster-design-5"
+  ]
+ },
+ "chinese-poem-generator": {
+  "calibration": [
+   "chinese-poem-generator-1"
+  ],
+  "practice": [
+   "chinese-poem-generator-2",
+   "chinese-poem-generator-3"
+  ],
+  "test": [
+   "chinese-poem-generator-4",
+   "chinese-poem-generator-5"
+  ]
+ },
+ "court-form-filling": {
+  "calibration": [
+   "court-form-filling-1"
+  ],
+  "practice": [
+   "court-form-filling-2",
+   "court-form-filling-3"
+  ],
+  "test": [
+   "court-form-filling-4",
+   "court-form-filling-5",
+   "court-form-filling-6"
+  ]
+ },
+ "enterprise-information-search": {
+  "calibration": [
+   "enterprise-information-search-1"
+  ],
+  "practice": [
+   "enterprise-information-search-2",
+   "enterprise-information-search-3"
+  ],
+  "test": [
+   "enterprise-information-search-4",
+   "enterprise-information-search-5",
+   "enterprise-information-search-6"
+  ]
+ },
+ "offer-letter-generator": {
+  "calibration": [
+   "offer-letter-generator-1"
+  ],
+  "practice": [
+   "offer-letter-generator-2",
+   "offer-letter-generator-3"
+  ],
+  "test": [
+   "offer-letter-generator-4",
+   "offer-letter-generator-5",
+   "offer-letter-generator-6"
+  ]
+ },
+ "travel-planning": {
+  "calibration": [
+   "travel-planning-1"
+  ],
+  "practice": [
+   "travel-planning-2",
+   "travel-planning-3"
+  ],
+  "test": [
+   "travel-planning-4",
+   "travel-planning-5"
+  ]
+ },
+ "video-object-counting": {
+  "calibration": [
+   "video-object-counting-1"
+  ],
+  "practice": [
+   "video-object-counting-2",
+   "video-object-counting-3"
+  ],
+  "test": [
+   "video-object-counting-4",
+   "video-object-counting-5"
+  ]
+ }
+}

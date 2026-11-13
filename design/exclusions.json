@@ -1,0 +1,4 @@
+{
+ "dependency-vulnerability-check": "overlap: both test tasks (4, 5) reword the calibration task (1): same package-lock.json, same verifier, same requested output; no test task remains",
+ "github-repo-analytics": "technical: every task requires a GitHub token and live GitHub access (task.toml required_env GH_TOKEN); the solver has no internet access and no credentials"
+}
