@@ -1,0 +1,99 @@
+{
+ "original_choice": {
+  "full_skill_passes": 3,
+  "mean_cost_usd": {
+   "api_code": 0.027071714399999995,
+   "source_native_compact": 0.023258143200000005
+  },
+  "reason": "tie_broken_by_mean_cost",
+  "scores": {
+   "api_code": 2,
+   "rule_formula": 1,
+   "source_native_compact": 2,
+   "workflow": 1
+  },
+  "shared_cases": [
+   "anthropic-poster-design",
+   "court-form-filling",
+   "enterprise-information-search",
+   "offer-letter-generator",
+   "video-object-counting"
+  ],
+  "strategy": "source_native_compact",
+  "tied": [
+   "source_native_compact",
+   "api_code"
+  ]
+ },
+ "original_s2_failure": "Rule S2: the chosen strategy fits the cap in only 5 of 7 families",
+ "continuation": {
+  "strategy": "api_code",
+  "fits": [
+   "anthropic-poster-design",
+   "chinese-poem-generator",
+   "court-form-filling",
+   "enterprise-information-search",
+   "offer-letter-generator",
+   "video-object-counting"
+  ],
+  "choice": {
+   "full_skill_passes": 3,
+   "reason": "amendment4_only_top_strategy_meeting_s2",
+   "scores": {
+    "api_code": 2,
+    "rule_formula": 1,
+    "source_native_compact": 2,
+    "workflow": 1
+   },
+   "strategy": "api_code",
+   "tied": [
+    "api_code"
+   ],
+   "top_tied": [
+    "source_native_compact",
+    "api_code"
+   ]
+  },
+  "fits_by_strategy": {
+   "api_code": [
+    "anthropic-poster-design",
+    "chinese-poem-generator",
+    "court-form-filling",
+    "enterprise-information-search",
+    "offer-letter-generator",
+    "video-object-counting"
+   ],
+   "rule_formula": [
+    "anthropic-poster-design",
+    "chinese-poem-generator",
+    "court-form-filling",
+    "enterprise-information-search",
+    "offer-letter-generator"
+   ],
+   "source_native_compact": [
+    "anthropic-poster-design",
+    "court-form-filling",
+    "enterprise-information-search",
+    "offer-letter-generator",
+    "video-object-counting"
+   ],
+   "workflow": [
+    "anthropic-poster-design",
+    "chinese-poem-generator",
+    "court-form-filling",
+    "enterprise-information-search",
+    "travel-planning"
+   ]
+  },
+  "frozen_rewrites_sha256": {
+   "anthropic-poster-design": "a21a5341074cf1bc4bfeda7658986f783709d64a5f55060abb76069a7882c998",
+   "chinese-poem-generator": "facd0a14876622f5f346d165fa5d71806c484d7f62d258e27011a976e1298ebf",
+   "court-form-filling": "19bf9e59c09f20db4bed2189d10f29b675e289a0ab64ed6137f394ef6ea1f28c",
+   "enterprise-information-search": "beb1053bb1451869ca4105fa459915966bf51c40dffcd8a4accb78986a49ba37",
+   "offer-letter-generator": "350dac64f65e72b3c0b853ed3120689bb5c78d29977c477339d7d1edf667d16a",
+   "travel-planning": "f40b50b3bf8cc05793db309d181fe6c9fee3055ed10c83a3785f1fcb9d572c90",
+   "video-object-counting": "6268aea0b40f11b31dae4718b09189d7bcaf910bc8bca5ee3ff2d543c35362ed"
+  },
+  "amendment": "Amendment 4 (adopted after calibration)"
+ }
+}
