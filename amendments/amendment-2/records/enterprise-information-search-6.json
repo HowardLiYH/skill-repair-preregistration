@@ -1,0 +1,21 @@
+{
+ "instance": "enterprise-information-search-6",
+ "split": "test",
+ "family": "enterprise-information-search",
+ "model_calls": 0,
+ "evidence_kind": "model_free_assigned_instance_native_negative_preflight",
+ "returncode": 0,
+ "counts": {
+  "passed": 1,
+  "failure": 3,
+  "error": 0,
+  "skipped": 0
+ },
+ "absence": {
+  "/root/answer.json": {
+   "exists": false
+  }
+ },
+ "contract": null,
+ "note": "no setup errors with the output absent: graded natively without a record"
+}

@@ -1,0 +1,24 @@
+{
+ "instance": "anthropic-poster-design-5",
+ "split": "test",
+ "family": "anthropic-poster-design",
+ "model_calls": 0,
+ "evidence_kind": "model_free_assigned_instance_native_negative_preflight",
+ "returncode": 0,
+ "counts": {
+  "passed": 0,
+  "failure": 6,
+  "error": 0,
+  "skipped": 0
+ },
+ "absence": {
+  "/root/anthropic_branded_artifact.png": {
+   "exists": false
+  },
+  "/root/design_parameters.json": {
+   "exists": false
+  }
+ },
+ "contract": null,
+ "note": "no setup errors with the output absent: graded natively without a record"
+}

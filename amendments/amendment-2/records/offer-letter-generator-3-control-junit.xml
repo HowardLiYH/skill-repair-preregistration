@@ -1,0 +1,291 @@
+<?xml version="1.0" encoding="utf-8"?><testsuites name="pytest tests"><testsuite name="pytest" errors="29" failures="0" skipped="0" tests="29" time="0.249" timestamp="2026-11-13T05:05:59.684128+00:00" hostname="0551d14ec042"><testcase classname="test_outputs" name="test_no_remaining_placeholders" time="0.001"><error message="failed on setup with &quot;AssertionError: Output file not found: /root/offer_letter_filled.docx&#10;assert False&#10; +  where False = exists()&#10; +    where exists = PosixPath('/root/offer_letter_filled.docx').exists&quot;">@pytest.fixture(scope="module")
+    def output_doc():
+        """Load the output document (implicitly tests existence and validity)."""
+        path = Path(OUTPUT_FILE)
+&gt;       assert path.exists(), f"Output file not found: {OUTPUT_FILE}"
+E       AssertionError: Output file not found: /root/offer_letter_filled.docx
+E       assert False
+E        +  where False = exists()
+E        +    where exists = PosixPath('/root/offer_letter_filled.docx').exists
+
+/tests/test_outputs.py:22: AssertionError</error></testcase><testcase classname="test_outputs" name="test_split_placeholder_replaced[DOC_ID]" time="0.000"><error message="failed on setup with &quot;AssertionError: Output file not found: /root/offer_letter_filled.docx&#10;assert False&#10; +  where False = exists()&#10; +    where exists = PosixPath('/root/offer_letter_filled.docx').exists&quot;">@pytest.fixture(scope="module")
+    def output_doc():
+        """Load the output document (implicitly tests existence and validity)."""
+        path = Path(OUTPUT_FILE)
+&gt;       assert path.exists(), f"Output file not found: {OUTPUT_FILE}"
+E       AssertionError: Output file not found: /root/offer_letter_filled.docx
+E       assert False
+E        +  where False = exists()
+E        +    where exists = PosixPath('/root/offer_letter_filled.docx').exists
+
+/tests/test_outputs.py:22: AssertionError</error></testcase><testcase classname="test_outputs" name="test_split_placeholder_replaced[DATE]" time="0.000"><error message="failed on setup with &quot;AssertionError: Output file not found: /root/offer_letter_filled.docx&#10;assert False&#10; +  where False = exists()&#10; +    where exists = PosixPath('/root/offer_letter_filled.docx').exists&quot;">@pytest.fixture(scope="module")
+    def output_doc():
+        """Load the output document (implicitly tests existence and validity)."""
+        path = Path(OUTPUT_FILE)
+&gt;       assert path.exists(), f"Output file not found: {OUTPUT_FILE}"
+E       AssertionError: Output file not found: /root/offer_letter_filled.docx
+E       assert False
+E        +  where False = exists()
+E        +    where exists = PosixPath('/root/offer_letter_filled.docx').exists
+
+/tests/test_outputs.py:22: AssertionError</error></testcase><testcase classname="test_outputs" name="test_split_placeholder_replaced[COMPANY_NAME]" time="0.000"><error message="failed on setup with &quot;AssertionError: Output file not found: /root/offer_letter_filled.docx&#10;assert False&#10; +  where False = exists()&#10; +    where exists = PosixPath('/root/offer_letter_filled.docx').exists&quot;">@pytest.fixture(scope="module")
+    def output_doc():
+        """Load the output document (implicitly tests existence and validity)."""
+        path = Path(OUTPUT_FILE)
+&gt;       assert path.exists(), f"Output file not found: {OUTPUT_FILE}"
+E       AssertionError: Output file not found: /root/offer_letter_filled.docx
+E       assert False
+E        +  where False = exists()
+E        +    where exists = PosixPath('/root/offer_letter_filled.docx').exists
+
+/tests/test_outputs.py:22: AssertionError</error></testcase><testcase classname="test_outputs" name="test_split_placeholder_replaced[CANDIDATE_FULL_NAME]" time="0.000"><error message="failed on setup with &quot;AssertionError: Output file not found: /root/offer_letter_filled.docx&#10;assert False&#10; +  where False = exists()&#10; +    where exists = PosixPath('/root/offer_letter_filled.docx').exists&quot;">@pytest.fixture(scope="module")
+    def output_doc():
+        """Load the output document (implicitly tests existence and validity)."""
+        path = Path(OUTPUT_FILE)
+&gt;       assert path.exists(), f"Output file not found: {OUTPUT_FILE}"
+E       AssertionError: Output file not found: /root/offer_letter_filled.docx
+E       assert False
+E        +  where False = exists()
+E        +    where exists = PosixPath('/root/offer_letter_filled.docx').exists
+
+/tests/test_outputs.py:22: AssertionError</error></testcase><testcase classname="test_outputs" name="test_split_placeholder_replaced[CITY]" time="0.000"><error message="failed on setup with &quot;AssertionError: Output file not found: /root/offer_letter_filled.docx&#10;assert False&#10; +  where False = exists()&#10; +    where exists = PosixPath('/root/offer_letter_filled.docx').exists&quot;">@pytest.fixture(scope="module")
+    def output_doc():
+        """Load the output document (implicitly tests existence and validity)."""
+        path = Path(OUTPUT_FILE)
+&gt;       assert path.exists(), f"Output file not found: {OUTPUT_FILE}"
+E       AssertionError: Output file not found: /root/offer_letter_filled.docx
+E       assert False
+E        +  where False = exists()
+E        +    where exists = PosixPath('/root/offer_letter_filled.docx').exists
+
+/tests/test_outputs.py:22: AssertionError</error></testcase><testcase classname="test_outputs" name="test_split_placeholder_replaced[STATE]" time="0.000"><error message="failed on setup with &quot;AssertionError: Output file not found: /root/offer_letter_filled.docx&#10;assert False&#10; +  where False = exists()&#10; +    where exists = PosixPath('/root/offer_letter_filled.docx').exists&quot;">@pytest.fixture(scope="module")
+    def output_doc():
+        """Load the output document (implicitly tests existence and validity)."""
+        path = Path(OUTPUT_FILE)
+&gt;       assert path.exists(), f"Output file not found: {OUTPUT_FILE}"
+E       AssertionError: Output file not found: /root/offer_letter_filled.docx
+E       assert False
+E        +  where False = exists()
+E        +    where exists = PosixPath('/root/offer_letter_filled.docx').exists
+
+/tests/test_outputs.py:22: AssertionError</error></testcase><testcase classname="test_outputs" name="test_split_placeholder_replaced[ZIP_CODE]" time="0.000"><error message="failed on setup with &quot;AssertionError: Output file not found: /root/offer_letter_filled.docx&#10;assert False&#10; +  where False = exists()&#10; +    where exists = PosixPath('/root/offer_letter_filled.docx').exists&quot;">@pytest.fixture(scope="module")
+    def output_doc():
+        """Load the output document (implicitly tests existence and validity)."""
+        path = Path(OUTPUT_FILE)
+&gt;       assert path.exists(), f"Output file not found: {OUTPUT_FILE}"
+E       AssertionError: Output file not found: /root/offer_letter_filled.docx
+E       assert False
+E        +  where False = exists()
+E        +    where exists = PosixPath('/root/offer_letter_filled.docx').exists
+
+/tests/test_outputs.py:22: AssertionError</error></testcase><testcase classname="test_outputs" name="test_split_placeholder_replaced[POSITION]" time="0.000"><error message="failed on setup with &quot;AssertionError: Output file not found: /root/offer_letter_filled.docx&#10;assert False&#10; +  where False = exists()&#10; +    where exists = PosixPath('/root/offer_letter_filled.docx').exists&quot;">@pytest.fixture(scope="module")
+    def output_doc():
+        """Load the output document (implicitly tests existence and validity)."""
+        path = Path(OUTPUT_FILE)
+&gt;       assert path.exists(), f"Output file not found: {OUTPUT_FILE}"
+E       AssertionError: Output file not found: /root/offer_letter_filled.docx
+E       assert False
+E        +  where False = exists()
+E        +    where exists = PosixPath('/root/offer_letter_filled.docx').exists
+
+/tests/test_outputs.py:22: AssertionError</error></testcase><testcase classname="test_outputs" name="test_split_placeholder_replaced[DEPARTMENT]" time="0.000"><error message="failed on setup with &quot;AssertionError: Output file not found: /root/offer_letter_filled.docx&#10;assert False&#10; +  where False = exists()&#10; +    where exists = PosixPath('/root/offer_letter_filled.docx').exists&quot;">@pytest.fixture(scope="module")
+    def output_doc():
+        """Load the output document (implicitly tests existence and validity)."""
+        path = Path(OUTPUT_FILE)
+&gt;       assert path.exists(), f"Output file not found: {OUTPUT_FILE}"
+E       AssertionError: Output file not found: /root/offer_letter_filled.docx
+E       assert False
+E        +  where False = exists()
+E        +    where exists = PosixPath('/root/offer_letter_filled.docx').exists
+
+/tests/test_outputs.py:22: AssertionError</error></testcase><testcase classname="test_outputs" name="test_split_placeholder_replaced[RESPONSE_DEADLINE]" time="0.000"><error message="failed on setup with &quot;AssertionError: Output file not found: /root/offer_letter_filled.docx&#10;assert False&#10; +  where False = exists()&#10; +    where exists = PosixPath('/root/offer_letter_filled.docx').exists&quot;">@pytest.fixture(scope="module")
+    def output_doc():
+        """Load the output document (implicitly tests existence and validity)."""
+        path = Path(OUTPUT_FILE)
+&gt;       assert path.exists(), f"Output file not found: {OUTPUT_FILE}"
+E       AssertionError: Output file not found: /root/offer_letter_filled.docx
+E       assert False
+E        +  where False = exists()
+E        +    where exists = PosixPath('/root/offer_letter_filled.docx').exists
+
+/tests/test_outputs.py:22: AssertionError</error></testcase><testcase classname="test_outputs" name="test_split_placeholder_replaced[HR_NAME]" time="0.000"><error message="failed on setup with &quot;AssertionError: Output file not found: /root/offer_letter_filled.docx&#10;assert False&#10; +  where False = exists()&#10; +    where exists = PosixPath('/root/offer_letter_filled.docx').exists&quot;">@pytest.fixture(scope="module")
+    def output_doc():
+        """Load the output document (implicitly tests existence and validity)."""
+        path = Path(OUTPUT_FILE)
+&gt;       assert path.exists(), f"Output file not found: {OUTPUT_FILE}"
+E       AssertionError: Output file not found: /root/offer_letter_filled.docx
+E       assert False
+E        +  where False = exists()
+E        +    where exists = PosixPath('/root/offer_letter_filled.docx').exists
+
+/tests/test_outputs.py:22: AssertionError</error></testcase><testcase classname="test_outputs" name="test_split_placeholder_replaced[PTO_DAYS]" time="0.000"><error message="failed on setup with &quot;AssertionError: Output file not found: /root/offer_letter_filled.docx&#10;assert False&#10; +  where False = exists()&#10; +    where exists = PosixPath('/root/offer_letter_filled.docx').exists&quot;">@pytest.fixture(scope="module")
+    def output_doc():
+        """Load the output document (implicitly tests existence and validity)."""
+        path = Path(OUTPUT_FILE)
+&gt;       assert path.exists(), f"Output file not found: {OUTPUT_FILE}"
+E       AssertionError: Output file not found: /root/offer_letter_filled.docx
+E       assert False
+E        +  where False = exists()
+E        +    where exists = PosixPath('/root/offer_letter_filled.docx').exists
+
+/tests/test_outputs.py:22: AssertionError</error></testcase><testcase classname="test_outputs" name="test_repeated_placeholders_replaced_everywhere[DOC_ID-2]" time="0.000"><error message="failed on setup with &quot;AssertionError: Output file not found: /root/offer_letter_filled.docx&#10;assert False&#10; +  where False = exists()&#10; +    where exists = PosixPath('/root/offer_letter_filled.docx').exists&quot;">@pytest.fixture(scope="module")
+    def output_doc():
+        """Load the output document (implicitly tests existence and validity)."""
+        path = Path(OUTPUT_FILE)
+&gt;       assert path.exists(), f"Output file not found: {OUTPUT_FILE}"
+E       AssertionError: Output file not found: /root/offer_letter_filled.docx
+E       assert False
+E        +  where False = exists()
+E        +    where exists = PosixPath('/root/offer_letter_filled.docx').exists
+
+/tests/test_outputs.py:22: AssertionError</error></testcase><testcase classname="test_outputs" name="test_repeated_placeholders_replaced_everywhere[COMPANY_NAME-5]" time="0.000"><error message="failed on setup with &quot;AssertionError: Output file not found: /root/offer_letter_filled.docx&#10;assert False&#10; +  where False = exists()&#10; +    where exists = PosixPath('/root/offer_letter_filled.docx').exists&quot;">@pytest.fixture(scope="module")
+    def output_doc():
+        """Load the output document (implicitly tests existence and validity)."""
+        path = Path(OUTPUT_FILE)
+&gt;       assert path.exists(), f"Output file not found: {OUTPUT_FILE}"
+E       AssertionError: Output file not found: /root/offer_letter_filled.docx
+E       assert False
+E        +  where False = exists()
+E        +    where exists = PosixPath('/root/offer_letter_filled.docx').exists
+
+/tests/test_outputs.py:22: AssertionError</error></testcase><testcase classname="test_outputs" name="test_repeated_placeholders_replaced_everywhere[CANDIDATE_FULL_NAME-3]" time="0.000"><error message="failed on setup with &quot;AssertionError: Output file not found: /root/offer_letter_filled.docx&#10;assert False&#10; +  where False = exists()&#10; +    where exists = PosixPath('/root/offer_letter_filled.docx').exists&quot;">@pytest.fixture(scope="module")
+    def output_doc():
+        """Load the output document (implicitly tests existence and validity)."""
+        path = Path(OUTPUT_FILE)
+&gt;       assert path.exists(), f"Output file not found: {OUTPUT_FILE}"
+E       AssertionError: Output file not found: /root/offer_letter_filled.docx
+E       assert False
+E        +  where False = exists()
+E        +    where exists = PosixPath('/root/offer_letter_filled.docx').exists
+
+/tests/test_outputs.py:22: AssertionError</error></testcase><testcase classname="test_outputs" name="test_nested_table_value[POSITION]" time="0.000"><error message="failed on setup with &quot;AssertionError: Output file not found: /root/offer_letter_filled.docx&#10;assert False&#10; +  where False = exists()&#10; +    where exists = PosixPath('/root/offer_letter_filled.docx').exists&quot;">@pytest.fixture(scope="module")
+    def output_doc():
+        """Load the output document (implicitly tests existence and validity)."""
+        path = Path(OUTPUT_FILE)
+&gt;       assert path.exists(), f"Output file not found: {OUTPUT_FILE}"
+E       AssertionError: Output file not found: /root/offer_letter_filled.docx
+E       assert False
+E        +  where False = exists()
+E        +    where exists = PosixPath('/root/offer_letter_filled.docx').exists
+
+/tests/test_outputs.py:22: AssertionError</error></testcase><testcase classname="test_outputs" name="test_nested_table_value[DEPARTMENT]" time="0.000"><error message="failed on setup with &quot;AssertionError: Output file not found: /root/offer_letter_filled.docx&#10;assert False&#10; +  where False = exists()&#10; +    where exists = PosixPath('/root/offer_letter_filled.docx').exists&quot;">@pytest.fixture(scope="module")
+    def output_doc():
+        """Load the output document (implicitly tests existence and validity)."""
+        path = Path(OUTPUT_FILE)
+&gt;       assert path.exists(), f"Output file not found: {OUTPUT_FILE}"
+E       AssertionError: Output file not found: /root/offer_letter_filled.docx
+E       assert False
+E        +  where False = exists()
+E        +    where exists = PosixPath('/root/offer_letter_filled.docx').exists
+
+/tests/test_outputs.py:22: AssertionError</error></testcase><testcase classname="test_outputs" name="test_nested_table_value[START_DATE]" time="0.000"><error message="failed on setup with &quot;AssertionError: Output file not found: /root/offer_letter_filled.docx&#10;assert False&#10; +  where False = exists()&#10; +    where exists = PosixPath('/root/offer_letter_filled.docx').exists&quot;">@pytest.fixture(scope="module")
+    def output_doc():
+        """Load the output document (implicitly tests existence and validity)."""
+        path = Path(OUTPUT_FILE)
+&gt;       assert path.exists(), f"Output file not found: {OUTPUT_FILE}"
+E       AssertionError: Output file not found: /root/offer_letter_filled.docx
+E       assert False
+E        +  where False = exists()
+E        +    where exists = PosixPath('/root/offer_letter_filled.docx').exists
+
+/tests/test_outputs.py:22: AssertionError</error></testcase><testcase classname="test_outputs" name="test_nested_table_value[BASE_SALARY]" time="0.000"><error message="failed on setup with &quot;AssertionError: Output file not found: /root/offer_letter_filled.docx&#10;assert False&#10; +  where False = exists()&#10; +    where exists = PosixPath('/root/offer_letter_filled.docx').exists&quot;">@pytest.fixture(scope="module")
+    def output_doc():
+        """Load the output document (implicitly tests existence and validity)."""
+        path = Path(OUTPUT_FILE)
+&gt;       assert path.exists(), f"Output file not found: {OUTPUT_FILE}"
+E       AssertionError: Output file not found: /root/offer_letter_filled.docx
+E       assert False
+E        +  where False = exists()
+E        +    where exists = PosixPath('/root/offer_letter_filled.docx').exists
+
+/tests/test_outputs.py:22: AssertionError</error></testcase><testcase classname="test_outputs" name="test_nested_table_value[SIGNING_BONUS]" time="0.000"><error message="failed on setup with &quot;AssertionError: Output file not found: /root/offer_letter_filled.docx&#10;assert False&#10; +  where False = exists()&#10; +    where exists = PosixPath('/root/offer_letter_filled.docx').exists&quot;">@pytest.fixture(scope="module")
+    def output_doc():
+        """Load the output document (implicitly tests existence and validity)."""
+        path = Path(OUTPUT_FILE)
+&gt;       assert path.exists(), f"Output file not found: {OUTPUT_FILE}"
+E       AssertionError: Output file not found: /root/offer_letter_filled.docx
+E       assert False
+E        +  where False = exists()
+E        +    where exists = PosixPath('/root/offer_letter_filled.docx').exists
+
+/tests/test_outputs.py:22: AssertionError</error></testcase><testcase classname="test_outputs" name="test_nested_table_value[EQUITY_SHARES]" time="0.000"><error message="failed on setup with &quot;AssertionError: Output file not found: /root/offer_letter_filled.docx&#10;assert False&#10; +  where False = exists()&#10; +    where exists = PosixPath('/root/offer_letter_filled.docx').exists&quot;">@pytest.fixture(scope="module")
+    def output_doc():
+        """Load the output document (implicitly tests existence and validity)."""
+        path = Path(OUTPUT_FILE)
+&gt;       assert path.exists(), f"Output file not found: {OUTPUT_FILE}"
+E       AssertionError: Output file not found: /root/offer_letter_filled.docx
+E       assert False
+E        +  where False = exists()
+E        +    where exists = PosixPath('/root/offer_letter_filled.docx').exists
+
+/tests/test_outputs.py:22: AssertionError</error></testcase><testcase classname="test_outputs" name="test_nested_table_value[MANAGER_NAME]" time="0.000"><error message="failed on setup with &quot;AssertionError: Output file not found: /root/offer_letter_filled.docx&#10;assert False&#10; +  where False = exists()&#10; +    where exists = PosixPath('/root/offer_letter_filled.docx').exists&quot;">@pytest.fixture(scope="module")
+    def output_doc():
+        """Load the output document (implicitly tests existence and validity)."""
+        path = Path(OUTPUT_FILE)
+&gt;       assert path.exists(), f"Output file not found: {OUTPUT_FILE}"
+E       AssertionError: Output file not found: /root/offer_letter_filled.docx
+E       assert False
+E        +  where False = exists()
+E        +    where exists = PosixPath('/root/offer_letter_filled.docx').exists
+
+/tests/test_outputs.py:22: AssertionError</error></testcase><testcase classname="test_outputs" name="test_additional_required_field_present[STREET_ADDRESS]" time="0.000"><error message="failed on setup with &quot;AssertionError: Output file not found: /root/offer_letter_filled.docx&#10;assert False&#10; +  where False = exists()&#10; +    where exists = PosixPath('/root/offer_letter_filled.docx').exists&quot;">@pytest.fixture(scope="module")
+    def output_doc():
+        """Load the output document (implicitly tests existence and validity)."""
+        path = Path(OUTPUT_FILE)
+&gt;       assert path.exists(), f"Output file not found: {OUTPUT_FILE}"
+E       AssertionError: Output file not found: /root/offer_letter_filled.docx
+E       assert False
+E        +  where False = exists()
+E        +    where exists = PosixPath('/root/offer_letter_filled.docx').exists
+
+/tests/test_outputs.py:22: AssertionError</error></testcase><testcase classname="test_outputs" name="test_additional_required_field_present[HR_TITLE]" time="0.000"><error message="failed on setup with &quot;AssertionError: Output file not found: /root/offer_letter_filled.docx&#10;assert False&#10; +  where False = exists()&#10; +    where exists = PosixPath('/root/offer_letter_filled.docx').exists&quot;">@pytest.fixture(scope="module")
+    def output_doc():
+        """Load the output document (implicitly tests existence and validity)."""
+        path = Path(OUTPUT_FILE)
+&gt;       assert path.exists(), f"Output file not found: {OUTPUT_FILE}"
+E       AssertionError: Output file not found: /root/offer_letter_filled.docx
+E       assert False
+E        +  where False = exists()
+E        +    where exists = PosixPath('/root/offer_letter_filled.docx').exists
+
+/tests/test_outputs.py:22: AssertionError</error></testcase><testcase classname="test_outputs" name="test_header_footer_value[DOC_ID]" time="0.000"><error message="failed on setup with &quot;AssertionError: Output file not found: /root/offer_letter_filled.docx&#10;assert False&#10; +  where False = exists()&#10; +    where exists = PosixPath('/root/offer_letter_filled.docx').exists&quot;">@pytest.fixture(scope="module")
+    def output_doc():
+        """Load the output document (implicitly tests existence and validity)."""
+        path = Path(OUTPUT_FILE)
+&gt;       assert path.exists(), f"Output file not found: {OUTPUT_FILE}"
+E       AssertionError: Output file not found: /root/offer_letter_filled.docx
+E       assert False
+E        +  where False = exists()
+E        +    where exists = PosixPath('/root/offer_letter_filled.docx').exists
+
+/tests/test_outputs.py:22: AssertionError</error></testcase><testcase classname="test_outputs" name="test_header_footer_value[COMPANY_NAME]" time="0.000"><error message="failed on setup with &quot;AssertionError: Output file not found: /root/offer_letter_filled.docx&#10;assert False&#10; +  where False = exists()&#10; +    where exists = PosixPath('/root/offer_letter_filled.docx').exists&quot;">@pytest.fixture(scope="module")
+    def output_doc():
+        """Load the output document (implicitly tests existence and validity)."""
+        path = Path(OUTPUT_FILE)
+&gt;       assert path.exists(), f"Output file not found: {OUTPUT_FILE}"
+E       AssertionError: Output file not found: /root/offer_letter_filled.docx
+E       assert False
+E        +  where False = exists()
+E        +    where exists = PosixPath('/root/offer_letter_filled.docx').exists
+
+/tests/test_outputs.py:22: AssertionError</error></testcase><testcase classname="test_outputs" name="test_header_footer_value[CANDIDATE_FULL_NAME]" time="0.000"><error message="failed on setup with &quot;AssertionError: Output file not found: /root/offer_letter_filled.docx&#10;assert False&#10; +  where False = exists()&#10; +    where exists = PosixPath('/root/offer_letter_filled.docx').exists&quot;">@pytest.fixture(scope="module")
+    def output_doc():
+        """Load the output document (implicitly tests existence and validity)."""
+        path = Path(OUTPUT_FILE)
+&gt;       assert path.exists(), f"Output file not found: {OUTPUT_FILE}"
+E       AssertionError: Output file not found: /root/offer_letter_filled.docx
+E       assert False
+E        +  where False = exists()
+E        +    where exists = PosixPath('/root/offer_letter_filled.docx').exists
+
+/tests/test_outputs.py:22: AssertionError</error></testcase><testcase classname="test_outputs" name="test_conditional_section" time="0.000"><error message="failed on setup with &quot;AssertionError: Output file not found: /root/offer_letter_filled.docx&#10;assert False&#10; +  where False = exists()&#10; +    where exists = PosixPath('/root/offer_letter_filled.docx').exists&quot;">@pytest.fixture(scope="module")
+    def output_doc():
+        """Load the output document (implicitly tests existence and validity)."""
+        path = Path(OUTPUT_FILE)
+&gt;       assert path.exists(), f"Output file not found: {OUTPUT_FILE}"
+E       AssertionError: Output file not found: /root/offer_letter_filled.docx
+E       assert False
+E        +  where False = exists()
+E        +    where exists = PosixPath('/root/offer_letter_filled.docx').exists
+
+/tests/test_outputs.py:22: AssertionError</error></testcase></testsuite></testsuites>

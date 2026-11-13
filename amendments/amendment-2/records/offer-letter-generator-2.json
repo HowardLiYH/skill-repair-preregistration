@@ -1,0 +1,51 @@
+{
+ "instance": "offer-letter-generator-2",
+ "split": "dev",
+ "family": "offer-letter-generator",
+ "model_calls": 0,
+ "evidence_kind": "model_free_assigned_instance_native_negative_preflight",
+ "returncode": 0,
+ "counts": {
+  "passed": 0,
+  "failure": 0,
+  "error": 29,
+  "skipped": 0
+ },
+ "absence": {
+  "/root/offer_letter_filled.docx": {
+   "exists": false
+  }
+ },
+ "contract": {
+  "policy": "native-pytest-junit-v1",
+  "review_status": "approved_source_bound_missing_output",
+  "grader_hashes": {
+   "test.sh": "7f506a7694af94ec163d237d8765a09b1d6e0766e5ae422df9a44d472a7cc49c",
+   "test_outputs.py": "86cab2d0e67ecc1a76f41bbc4222cb4669d8b69041b075089d5f29d1fb86cc4b"
+  },
+  "calibration_evidence_sha256": "e86316d7783a0d21f99021393cfc153400ecb87907a031b0c6d0b4d5e82753a8",
+  "required_absent_paths": [
+   "/root/offer_letter_filled.docx"
+  ],
+  "error_signatures": [
+   "9a8d71b3b374e6c7ae8485c91ee7dc07b83cdde522f95de6198c3e4fbb6a0e7c"
+  ],
+  "diagnostic_normalization": "python-test-object-address-v1",
+  "family": "offer-letter-generator",
+  "instance_id": "offer-letter-generator-2",
+  "evidence_kind": "model_free_assigned_instance_native_negative_preflight",
+  "interpretation": "Exact output-absence setup diagnostics from a model-free control; unrelated setup errors remain infrastructure.",
+  "amendment": "Amendment 2, owner approval 2026-11-13T03:53Z"
+ },
+ "check_with_record": {
+  "status": "task_fail",
+  "native_reward": 0,
+  "reason": "reviewed_missing_required_output"
+ },
+ "check_unrelated_error": {
+  "status": "infra_error",
+  "reason": "unresolved_native_setup_error"
+ },
+ "check_missing_report": "refused: infra_error native_sidecar_not_verified",
+ "directions_verified": true
+}

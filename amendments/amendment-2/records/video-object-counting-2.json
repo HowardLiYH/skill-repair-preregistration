@@ -1,0 +1,21 @@
+{
+ "instance": "video-object-counting-2",
+ "split": "dev",
+ "family": "video-object-counting",
+ "model_calls": 0,
+ "evidence_kind": "model_free_assigned_instance_native_negative_preflight",
+ "returncode": 0,
+ "counts": {
+  "passed": 1,
+  "failure": 2,
+  "error": 0,
+  "skipped": 0
+ },
+ "absence": {
+  "/root/counting_results.csv": {
+   "exists": false
+  }
+ },
+ "contract": null,
+ "note": "no setup errors with the output absent: graded natively without a record"
+}

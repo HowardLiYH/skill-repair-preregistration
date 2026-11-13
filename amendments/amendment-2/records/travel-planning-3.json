@@ -1,0 +1,21 @@
+{
+ "instance": "travel-planning-3",
+ "split": "dev",
+ "family": "travel-planning",
+ "model_calls": 0,
+ "evidence_kind": "model_free_assigned_instance_native_negative_preflight",
+ "returncode": 0,
+ "counts": {
+  "passed": 0,
+  "failure": 11,
+  "error": 0,
+  "skipped": 0
+ },
+ "absence": {
+  "/app/output/itinerary.json": {
+   "exists": false
+  }
+ },
+ "contract": null,
+ "note": "no setup errors with the output absent: graded natively without a record"
+}

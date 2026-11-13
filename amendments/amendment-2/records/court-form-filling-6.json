@@ -1,0 +1,53 @@
+{
+ "instance": "court-form-filling-6",
+ "split": "test",
+ "family": "court-form-filling",
+ "model_calls": 0,
+ "evidence_kind": "model_free_assigned_instance_native_negative_preflight",
+ "returncode": 0,
+ "counts": {
+  "passed": 0,
+  "failure": 0,
+  "error": 47,
+  "skipped": 0
+ },
+ "absence": {
+  "/root/sc100-filled.pdf": {
+   "exists": false
+  }
+ },
+ "contract": {
+  "policy": "native-pytest-junit-v1",
+  "review_status": "approved_source_bound_missing_output",
+  "grader_hashes": {
+   "test.sh": "3b737fad7a00d6b8f63ffef481beea1e4b8ca518a558cfb6d28772cd49eefa38",
+   "test_outputs.py": "79e03103449d4aaeb93c00588a892dfaa2b6527d4a98a6f97e7ab6877529e033"
+  },
+  "calibration_evidence_sha256": "2854332e207c951ef919e75e291503691022b2404eeec5316e81a5e512eb7a17",
+  "required_absent_paths": [
+   "/root/sc100-filled.pdf"
+  ],
+  "error_signatures": [
+   "ab1a2d22c855ba086fae5480b635f0ab373cafd2f2079e36cef7ca0cea58de72",
+   "b5271d4db04cd4c61fca75e4e5ffbc8fe7c86fce996cb1385ce65404d99d6e99",
+   "bcf2198362beb408e1087bc044dd4366fa818e2a2e5991616c02619166129d12"
+  ],
+  "diagnostic_normalization": "python-test-object-address-v1",
+  "family": "court-form-filling",
+  "instance_id": "court-form-filling-6",
+  "evidence_kind": "model_free_assigned_instance_native_negative_preflight",
+  "interpretation": "Exact output-absence setup diagnostics from a model-free control; unrelated setup errors remain infrastructure.",
+  "amendment": "Amendment 2, owner approval 2026-11-13T03:53Z"
+ },
+ "check_with_record": {
+  "status": "task_fail",
+  "native_reward": 0,
+  "reason": "reviewed_missing_required_output"
+ },
+ "check_unrelated_error": {
+  "status": "infra_error",
+  "reason": "unresolved_native_setup_error"
+ },
+ "check_missing_report": "refused: infra_error native_sidecar_not_verified",
+ "directions_verified": true
+}
