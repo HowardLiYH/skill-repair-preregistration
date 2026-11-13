@@ -1,0 +1,994 @@
+{
+ "amendments": [
+  "amendment-1 (2026-11-13): calibration incident",
+  "amendment-2 (2026-11-13): missing-output records",
+  "amendment-3 (2026-11-13): consistent skipped checks count as not passed"
+ ],
+ "artifact_root": "/opt/followup/artifacts-confirmatory",
+ "benchmark_commit": "726e1f79b96b0cb3d729d0e55a1c847e0b5353ae",
+ "budget_usd": 19,
+ "cache_regime": "fresh_solver_workspace_no_shared_conversation_explicit_image_layer_cache_provider_prompt_cache_measured",
+ "campaign_id": "followup-confirmatory-v1",
+ "data_root": "/opt/followup/followup-data",
+ "executor": {
+  "agent_id": "claude-code",
+  "cli_version": "2.1.296",
+  "deployment_snapshot": "alias_exact_hosted_revision_unverified",
+  "effective_limits_file": "/opt/followup/repo/configs/calibration/effective-limits.json",
+  "max_steps": 100,
+  "model_id": "deepseek-flash",
+  "model_revision": "DeepSeek-V4.1-Flash-1017",
+  "provider": "deepseek",
+  "seed": "unsupported_not_set",
+  "temperature": "provider_default_not_exposed_by_anthropic_adapter",
+  "thinking": "disabled",
+  "tool_policy_file": "/opt/followup/repo/configs/calibration/tool-policy.json"
+ },
+ "external_input_versions": {
+  "benchmark_commit": "726e1f79b96b0cb3d729d0e55a1c847e0b5353ae",
+  "pdf_cache_manifest_sha256": "39ea3cec61f6ef5d054f9eca703edb0c40f4350b411fe8f5035a0c61428f1141"
+ },
+ "followup_required_outputs": {
+  "anthropic-poster-design-1": [
+   "/root/design_parameters.json",
+   "/root/nova_technical_poster.png"
+  ],
+  "anthropic-poster-design-2": [
+   "/root/anthropic_branded_artifact.png",
+   "/root/design_parameters.json"
+  ],
+  "anthropic-poster-design-3": [
+   "/root/anthropic_branded_artifact.png",
+   "/root/design_parameters.json"
+  ],
+  "anthropic-poster-design-4": [
+   "/root/design_parameters.json",
+   "/root/orion_technical_poster.png"
+  ],
+  "anthropic-poster-design-5": [
+   "/root/anthropic_branded_artifact.png",
+   "/root/design_parameters.json"
+  ],
+  "chinese-poem-generator-1": [
+   "/root/poem.txt"
+  ],
+  "chinese-poem-generator-2": [
+   "/root/poem.txt"
+  ],
+  "chinese-poem-generator-3": [
+   "/root/poem.txt"
+  ],
+  "chinese-poem-generator-4": [
+   "/root/poem.txt"
+  ],
+  "chinese-poem-generator-5": [
+   "/root/poem.txt"
+  ],
+  "court-form-filling-1": [
+   "/root/sc100-filled.pdf"
+  ],
+  "court-form-filling-2": [
+   "/root/sc100-filled.pdf"
+  ],
+  "court-form-filling-3": [
+   "/root/sc100-filled.pdf"
+  ],
+  "court-form-filling-4": [
+   "/root/sc100-filled.pdf"
+  ],
+  "court-form-filling-5": [
+   "/root/sc100-filled.pdf"
+  ],
+  "court-form-filling-6": [
+   "/root/sc100-filled.pdf"
+  ],
+  "enterprise-information-search-1": [
+   "/root/answer.json"
+  ],
+  "enterprise-information-search-2": [
+   "/root/answer.json"
+  ],
+  "enterprise-information-search-3": [
+   "/root/answer.json"
+  ],
+  "enterprise-information-search-4": [
+   "/root/answer.json"
+  ],
+  "enterprise-information-search-5": [
+   "/root/answer.json"
+  ],
+  "enterprise-information-search-6": [
+   "/root/answer.json"
+  ],
+  "offer-letter-generator-1": [
+   "/root/offer_letter_filled.docx"
+  ],
+  "offer-letter-generator-2": [
+   "/root/offer_letter_filled.docx"
+  ],
+  "offer-letter-generator-3": [
+   "/root/offer_letter_filled.docx"
+  ],
+  "offer-letter-generator-4": [
+   "/root/offer_letter_filled.docx"
+  ],
+  "offer-letter-generator-5": [
+   "/root/offer_letter_filled.docx"
+  ],
+  "offer-letter-generator-6": [
+   "/root/offer_letter_filled.docx"
+  ],
+  "travel-planning-1": [
+   "/app/output/itinerary.json"
+  ],
+  "travel-planning-2": [
+   "/app/output/itinerary.json"
+  ],
+  "travel-planning-3": [
+   "/app/output/itinerary.json"
+  ],
+  "travel-planning-4": [
+   "/app/output/itinerary.json"
+  ],
+  "travel-planning-5": [
+   "/app/output/itinerary.json"
+  ],
+  "video-object-counting-1": [
+   "/root/counting_results.csv",
+   "/root/keyframes_*.png"
+  ],
+  "video-object-counting-2": [
+   "/root/counting_results.csv",
+   "/root/keyframes_*.png"
+  ],
+  "video-object-counting-3": [
+   "/root/counting_results.csv",
+   "/root/keyframes_*.png"
+  ],
+  "video-object-counting-4": [
+   "/root/counting_results.csv",
+   "/root/keyframes_*.png"
+  ],
+  "video-object-counting-5": [
+   "/root/counting_results.csv",
+   "/root/keyframes_*.png"
+  ]
+ },
+ "formal_policies_by_split": {
+  "dev": {
+   "campaign_id": "followup-confirmatory-v1",
+   "cpus": 4,
+   "id": "native-pytest-junit-v1",
+   "memory": "4g",
+   "protocol_sha256": "24c2204dbc243fcdd11097886902d7fb592f105cbc9d76e62a76110cbb8a7a9c",
+   "scope": "formal_dev",
+   "storage": {
+    "id": "verified-oci-cas-v1",
+    "minimum_free_bytes": 21474836480,
+    "receipt_quota_bytes": 67108864,
+    "receipts_path": "/opt/followup/artifacts/receipts",
+    "remove_verified_raw_duplicate": true,
+    "scratch_path": "/opt/followup/artifacts/scratch",
+    "scratch_quota_bytes": 68719476736,
+    "store_path": "/opt/followup/artifacts/cas",
+    "store_quota_bytes": 107374182400
+   },
+   "tasks": {
+    "anthropic-poster-design/anthropic-poster-design-2": {
+     "expected_tests": 6,
+     "grader_hashes": {
+      "test.sh": "c4d5d6afaea6206627fd59a5a369f30ca62d567cf0847c21168900baca12276a",
+      "test_outputs.py": "040cfcb134e09bb3c8613b642bae06d203bce9bc7d4e2995aaf9cc67f0d4765c"
+     },
+     "required_output_paths": [
+      "/root/anthropic_branded_artifact.png",
+      "/root/design_parameters.json"
+     ]
+    },
+    "anthropic-poster-design/anthropic-poster-design-3": {
+     "expected_tests": 6,
+     "grader_hashes": {
+      "test.sh": "c4d5d6afaea6206627fd59a5a369f30ca62d567cf0847c21168900baca12276a",
+      "test_outputs.py": "be0967b8e2471c5c31d1204d862b58889f671dbd6f77b4452b12e501979f3003"
+     },
+     "required_output_paths": [
+      "/root/anthropic_branded_artifact.png",
+      "/root/design_parameters.json"
+     ]
+    },
+    "chinese-poem-generator/chinese-poem-generator-2": {
+     "expected_tests": 6,
+     "grader_hashes": {
+      "test.sh": "c5fc058d1c372ab4040fc31a1462e434a104de6b9d148c228978121bff8d4ef9",
+      "test_outputs.py": "f883dbd46c65e6f305498bf9bc2dbbcbec3fbec06d3d993fad50ced0bc7764a5"
+     },
+     "required_output_paths": [
+      "/root/poem.txt"
+     ]
+    },
+    "chinese-poem-generator/chinese-poem-generator-3": {
+     "expected_tests": 6,
+     "grader_hashes": {
+      "test.sh": "c5fc058d1c372ab4040fc31a1462e434a104de6b9d148c228978121bff8d4ef9",
+      "test_outputs.py": "f883dbd46c65e6f305498bf9bc2dbbcbec3fbec06d3d993fad50ced0bc7764a5"
+     },
+     "required_output_paths": [
+      "/root/poem.txt"
+     ]
+    },
+    "court-form-filling/court-form-filling-2": {
+     "expected_tests": 47,
+     "grader_hashes": {
+      "test.sh": "3b737fad7a00d6b8f63ffef481beea1e4b8ca518a558cfb6d28772cd49eefa38",
+      "test_outputs.py": "c981f861c463101e6244aeaec99f7238a67a07600480cec8fdd7f0df60c89cda"
+     },
+     "missing_output_contract": {
+      "amendment": "Amendment 2, owner approval 2026-11-13T03:53Z",
+      "calibration_evidence_sha256": "655b0019da6380d501b54650b4d8695993048d7cedd67a10aafe1e18d14a3654",
+      "diagnostic_normalization": "python-test-object-address-v1",
+      "error_signatures": [
+       "ab1a2d22c855ba086fae5480b635f0ab373cafd2f2079e36cef7ca0cea58de72",
+       "b5271d4db04cd4c61fca75e4e5ffbc8fe7c86fce996cb1385ce65404d99d6e99",
+       "bcf2198362beb408e1087bc044dd4366fa818e2a2e5991616c02619166129d12"
+      ],
+      "evidence_kind": "model_free_assigned_instance_native_negative_preflight",
+      "family": "court-form-filling",
+      "grader_hashes": {
+       "test.sh": "3b737fad7a00d6b8f63ffef481beea1e4b8ca518a558cfb6d28772cd49eefa38",
+       "test_outputs.py": "c981f861c463101e6244aeaec99f7238a67a07600480cec8fdd7f0df60c89cda"
+      },
+      "instance_id": "court-form-filling-2",
+      "interpretation": "Exact output-absence setup diagnostics from a model-free control; unrelated setup errors remain infrastructure.",
+      "policy": "native-pytest-junit-v1",
+      "required_absent_paths": [
+       "/root/sc100-filled.pdf"
+      ],
+      "review_status": "approved_source_bound_missing_output"
+     },
+     "required_output_paths": [
+      "/root/sc100-filled.pdf"
+     ]
+    },
+    "court-form-filling/court-form-filling-3": {
+     "expected_tests": 47,
+     "grader_hashes": {
+      "test.sh": "3b737fad7a00d6b8f63ffef481beea1e4b8ca518a558cfb6d28772cd49eefa38",
+      "test_outputs.py": "4a1ee6442ccf2d18c9fb9faf7f84c6d1edb0a63c01e51508c2ec29d17858a659"
+     },
+     "missing_output_contract": {
+      "amendment": "Amendment 2, owner approval 2026-11-13T03:53Z",
+      "calibration_evidence_sha256": "0098c8563b3f355dc30f3e7042acddbdcb2b2ac85451b2c6e52c8e20972ec347",
+      "diagnostic_normalization": "python-test-object-address-v1",
+      "error_signatures": [
+       "ab1a2d22c855ba086fae5480b635f0ab373cafd2f2079e36cef7ca0cea58de72",
+       "b5271d4db04cd4c61fca75e4e5ffbc8fe7c86fce996cb1385ce65404d99d6e99",
+       "bcf2198362beb408e1087bc044dd4366fa818e2a2e5991616c02619166129d12"
+      ],
+      "evidence_kind": "model_free_assigned_instance_native_negative_preflight",
+      "family": "court-form-filling",
+      "grader_hashes": {
+       "test.sh": "3b737fad7a00d6b8f63ffef481beea1e4b8ca518a558cfb6d28772cd49eefa38",
+       "test_outputs.py": "4a1ee6442ccf2d18c9fb9faf7f84c6d1edb0a63c01e51508c2ec29d17858a659"
+      },
+      "instance_id": "court-form-filling-3",
+      "interpretation": "Exact output-absence setup diagnostics from a model-free control; unrelated setup errors remain infrastructure.",
+      "policy": "native-pytest-junit-v1",
+      "required_absent_paths": [
+       "/root/sc100-filled.pdf"
+      ],
+      "review_status": "approved_source_bound_missing_output"
+     },
+     "required_output_paths": [
+      "/root/sc100-filled.pdf"
+     ]
+    },
+    "enterprise-information-search/enterprise-information-search-2": {
+     "expected_tests": 4,
+     "grader_hashes": {
+      "test.sh": "e26daee2de02446ae541140c19d4616cc85818bb3291713657e2bd360db6248a",
+      "test_outputs.py": "d51d13f1329281eeec327544c8f4feca2e230e0f97143aeb48ceb73a6785a774"
+     },
+     "required_output_paths": [
+      "/root/answer.json"
+     ]
+    },
+    "enterprise-information-search/enterprise-information-search-3": {
+     "expected_tests": 4,
+     "grader_hashes": {
+      "test.sh": "e26daee2de02446ae541140c19d4616cc85818bb3291713657e2bd360db6248a",
+      "test_outputs.py": "b8078731892972552f9a2293354682f769d39d5f817b59ed89332b8f677068a8"
+     },
+     "required_output_paths": [
+      "/root/answer.json"
+     ]
+    },
+    "offer-letter-generator/offer-letter-generator-2": {
+     "expected_tests": 29,
+     "grader_hashes": {
+      "test.sh": "7f506a7694af94ec163d237d8765a09b1d6e0766e5ae422df9a44d472a7cc49c",
+      "test_outputs.py": "86cab2d0e67ecc1a76f41bbc4222cb4669d8b69041b075089d5f29d1fb86cc4b"
+     },
+     "missing_output_contract": {
+      "amendment": "Amendment 2, owner approval 2026-11-13T03:53Z",
+      "calibration_evidence_sha256": "e86316d7783a0d21f99021393cfc153400ecb87907a031b0c6d0b4d5e82753a8",
+      "diagnostic_normalization": "python-test-object-address-v1",
+      "error_signatures": [
+       "9a8d71b3b374e6c7ae8485c91ee7dc07b83cdde522f95de6198c3e4fbb6a0e7c"
+      ],
+      "evidence_kind": "model_free_assigned_instance_native_negative_preflight",
+      "family": "offer-letter-generator",
+      "grader_hashes": {
+       "test.sh": "7f506a7694af94ec163d237d8765a09b1d6e0766e5ae422df9a44d472a7cc49c",
+       "test_outputs.py": "86cab2d0e67ecc1a76f41bbc4222cb4669d8b69041b075089d5f29d1fb86cc4b"
+      },
+      "instance_id": "offer-letter-generator-2",
+      "interpretation": "Exact output-absence setup diagnostics from a model-free control; unrelated setup errors remain infrastructure.",
+      "policy": "native-pytest-junit-v1",
+      "required_absent_paths": [
+       "/root/offer_letter_filled.docx"
+      ],
+      "review_status": "approved_source_bound_missing_output"
+     },
+     "required_output_paths": [
+      "/root/offer_letter_filled.docx"
+     ]
+    },
+    "offer-letter-generator/offer-letter-generator-3": {
+     "expected_tests": 29,
+     "grader_hashes": {
+      "test.sh": "7f506a7694af94ec163d237d8765a09b1d6e0766e5ae422df9a44d472a7cc49c",
+      "test_outputs.py": "86cab2d0e67ecc1a76f41bbc4222cb4669d8b69041b075089d5f29d1fb86cc4b"
+     },
+     "missing_output_contract": {
+      "amendment": "Amendment 2, owner approval 2026-11-13T03:53Z",
+      "calibration_evidence_sha256": "9cc94a9b4de8cd48e3415ec3b303e18b571b242c4f522dd7331d781b4e09552c",
+      "diagnostic_normalization": "python-test-object-address-v1",
+      "error_signatures": [
+       "9a8d71b3b374e6c7ae8485c91ee7dc07b83cdde522f95de6198c3e4fbb6a0e7c"
+      ],
+      "evidence_kind": "model_free_assigned_instance_native_negative_preflight",
+      "family": "offer-letter-generator",
+      "grader_hashes": {
+       "test.sh": "7f506a7694af94ec163d237d8765a09b1d6e0766e5ae422df9a44d472a7cc49c",
+       "test_outputs.py": "86cab2d0e67ecc1a76f41bbc4222cb4669d8b69041b075089d5f29d1fb86cc4b"
+      },
+      "instance_id": "offer-letter-generator-3",
+      "interpretation": "Exact output-absence setup diagnostics from a model-free control; unrelated setup errors remain infrastructure.",
+      "policy": "native-pytest-junit-v1",
+      "required_absent_paths": [
+       "/root/offer_letter_filled.docx"
+      ],
+      "review_status": "approved_source_bound_missing_output"
+     },
+     "required_output_paths": [
+      "/root/offer_letter_filled.docx"
+     ]
+    },
+    "travel-planning/travel-planning-2": {
+     "expected_tests": 11,
+     "grader_hashes": {
+      "test.sh": "9c5e21df41442e611c22603234b40612681d722265d9005d8b8df6b678400d1a",
+      "test_outputs.py": "c42c1c895e71ed9c22ed5f0a3001fdc1258b2e6963d81f7ca246f65238cbdec3"
+     },
+     "required_output_paths": [
+      "/app/output/itinerary.json"
+     ]
+    },
+    "travel-planning/travel-planning-3": {
+     "expected_tests": 11,
+     "grader_hashes": {
+      "test.sh": "9c5e21df41442e611c22603234b40612681d722265d9005d8b8df6b678400d1a",
+      "test_outputs.py": "36831b133c74e8faa4e33ce47ebd8a0ff6140df1fdfbbbaf7cf83d6b2e9091b0"
+     },
+     "required_output_paths": [
+      "/app/output/itinerary.json"
+     ]
+    },
+    "video-object-counting/video-object-counting-2": {
+     "expected_tests": 3,
+     "grader_hashes": {
+      "expected_output.csv": "261c1dbb345bbb69f2bde670e0dd9e632bcb2b9e82150cae970b823e12c48b7a",
+      "test.sh": "87b8b329bfa325d3e0d49b5db5de8110eda240617326398ee94e409bba412783",
+      "test_outputs.py": "86a24bc527b1adad75aa8921d55713ba92cb2978ee66ce01cc4f9b20a92d18eb"
+     },
+     "required_output_paths": [
+      "/root/counting_results.csv"
+     ]
+    },
+    "video-object-counting/video-object-counting-3": {
+     "expected_tests": 3,
+     "grader_hashes": {
+      "expected_output.csv": "4304d23511acc245d2a441178eeafc5f7b6adfc68d2440d942a05e75ece67c78",
+      "test.sh": "87b8b329bfa325d3e0d49b5db5de8110eda240617326398ee94e409bba412783",
+      "test_outputs.py": "ae5d42a115f0a2075d738bc387345829561d1ea48f906abf1f2b3a6852f90097"
+     },
+     "required_output_paths": [
+      "/root/counting_results.csv"
+     ]
+    }
+   },
+   "native_skip_rule": "followup-amendment-3-skips-count-as-not-passed-v1"
+  },
+  "test": {
+   "campaign_id": "followup-confirmatory-v1",
+   "cpus": 4,
+   "id": "native-pytest-junit-v1",
+   "memory": "4g",
+   "protocol_sha256": "24c2204dbc243fcdd11097886902d7fb592f105cbc9d76e62a76110cbb8a7a9c",
+   "scope": "formal_test",
+   "storage": {
+    "id": "verified-oci-cas-v1",
+    "minimum_free_bytes": 21474836480,
+    "receipt_quota_bytes": 67108864,
+    "receipts_path": "/opt/followup/artifacts/receipts",
+    "remove_verified_raw_duplicate": true,
+    "scratch_path": "/opt/followup/artifacts/scratch",
+    "scratch_quota_bytes": 68719476736,
+    "store_path": "/opt/followup/artifacts/cas",
+    "store_quota_bytes": 107374182400
+   },
+   "tasks": {
+    "anthropic-poster-design/anthropic-poster-design-4": {
+     "expected_tests": 5,
+     "grader_hashes": {
+      "test.sh": "c4d5d6afaea6206627fd59a5a369f30ca62d567cf0847c21168900baca12276a",
+      "test_outputs.py": "ceafaf08fd7899cea1940f9d3e2d727a20d28698d8742846a4789b58198e8312"
+     },
+     "required_output_paths": [
+      "/root/design_parameters.json",
+      "/root/orion_technical_poster.png"
+     ]
+    },
+    "anthropic-poster-design/anthropic-poster-design-5": {
+     "expected_tests": 6,
+     "grader_hashes": {
+      "test.sh": "c4d5d6afaea6206627fd59a5a369f30ca62d567cf0847c21168900baca12276a",
+      "test_outputs.py": "be0967b8e2471c5c31d1204d862b58889f671dbd6f77b4452b12e501979f3003"
+     },
+     "required_output_paths": [
+      "/root/anthropic_branded_artifact.png",
+      "/root/design_parameters.json"
+     ]
+    },
+    "chinese-poem-generator/chinese-poem-generator-4": {
+     "expected_tests": 6,
+     "grader_hashes": {
+      "test.sh": "c5fc058d1c372ab4040fc31a1462e434a104de6b9d148c228978121bff8d4ef9",
+      "test_outputs.py": "f883dbd46c65e6f305498bf9bc2dbbcbec3fbec06d3d993fad50ced0bc7764a5"
+     },
+     "required_output_paths": [
+      "/root/poem.txt"
+     ]
+    },
+    "chinese-poem-generator/chinese-poem-generator-5": {
+     "expected_tests": 6,
+     "grader_hashes": {
+      "test.sh": "c5fc058d1c372ab4040fc31a1462e434a104de6b9d148c228978121bff8d4ef9",
+      "test_outputs.py": "f883dbd46c65e6f305498bf9bc2dbbcbec3fbec06d3d993fad50ced0bc7764a5"
+     },
+     "required_output_paths": [
+      "/root/poem.txt"
+     ]
+    },
+    "court-form-filling/court-form-filling-4": {
+     "expected_tests": 47,
+     "grader_hashes": {
+      "test.sh": "3b737fad7a00d6b8f63ffef481beea1e4b8ca518a558cfb6d28772cd49eefa38",
+      "test_outputs.py": "ccb5f72cc4c9a540f2f268adf1728fdf18c655470348551882c8ed9006ccbc4e"
+     },
+     "missing_output_contract": {
+      "amendment": "Amendment 2, owner approval 2026-11-13T03:53Z",
+      "calibration_evidence_sha256": "51924375ce6adca5ed500a02c2b6dfff356ecdbdd88cdbe48df9d66544da9d56",
+      "diagnostic_normalization": "python-test-object-address-v1",
+      "error_signatures": [
+       "ab1a2d22c855ba086fae5480b635f0ab373cafd2f2079e36cef7ca0cea58de72",
+       "b5271d4db04cd4c61fca75e4e5ffbc8fe7c86fce996cb1385ce65404d99d6e99",
+       "bcf2198362beb408e1087bc044dd4366fa818e2a2e5991616c02619166129d12"
+      ],
+      "evidence_kind": "model_free_assigned_instance_native_negative_preflight",
+      "family": "court-form-filling",
+      "grader_hashes": {
+       "test.sh": "3b737fad7a00d6b8f63ffef481beea1e4b8ca518a558cfb6d28772cd49eefa38",
+       "test_outputs.py": "ccb5f72cc4c9a540f2f268adf1728fdf18c655470348551882c8ed9006ccbc4e"
+      },
+      "instance_id": "court-form-filling-4",
+      "interpretation": "Exact output-absence setup diagnostics from a model-free control; unrelated setup errors remain infrastructure.",
+      "policy": "native-pytest-junit-v1",
+      "required_absent_paths": [
+       "/root/sc100-filled.pdf"
+      ],
+      "review_status": "approved_source_bound_missing_output"
+     },
+     "required_output_paths": [
+      "/root/sc100-filled.pdf"
+     ]
+    },
+    "court-form-filling/court-form-filling-5": {
+     "expected_tests": 50,
+     "grader_hashes": {
+      "test.sh": "3b737fad7a00d6b8f63ffef481beea1e4b8ca518a558cfb6d28772cd49eefa38",
+      "test_outputs.py": "29e7f43ed1a8c78cc9deb471aa3415db36701fef7ce22f23e7e8f2ddeb5dcbb9"
+     },
+     "missing_output_contract": {
+      "amendment": "Amendment 2, owner approval 2026-11-13T03:53Z",
+      "calibration_evidence_sha256": "935bb2a703fc1f7eee5482b8cfe440be1dadf786e527e69a363718c0c6d6771e",
+      "diagnostic_normalization": "python-test-object-address-v1",
+      "error_signatures": [
+       "81340e8b57c04c40abbee6caa153eeb4401b031079d4f7b658cd03c5f382872e",
+       "81758492686e4ace0f7c237670a6d1a92ac7f046b61490d27f6a1277e13a02a8",
+       "d94867dc034df9096b330d1b825996a1bb93a012a580e30620d9fd0da431b3b0"
+      ],
+      "evidence_kind": "model_free_assigned_instance_native_negative_preflight",
+      "family": "court-form-filling",
+      "grader_hashes": {
+       "test.sh": "3b737fad7a00d6b8f63ffef481beea1e4b8ca518a558cfb6d28772cd49eefa38",
+       "test_outputs.py": "29e7f43ed1a8c78cc9deb471aa3415db36701fef7ce22f23e7e8f2ddeb5dcbb9"
+      },
+      "instance_id": "court-form-filling-5",
+      "interpretation": "Exact output-absence setup diagnostics from a model-free control; unrelated setup errors remain infrastructure.",
+      "policy": "native-pytest-junit-v1",
+      "required_absent_paths": [
+       "/root/sc100-filled.pdf"
+      ],
+      "review_status": "approved_source_bound_missing_output"
+     },
+     "required_output_paths": [
+      "/root/sc100-filled.pdf"
+     ]
+    },
+    "court-form-filling/court-form-filling-6": {
+     "expected_tests": 47,
+     "grader_hashes": {
+      "test.sh": "3b737fad7a00d6b8f63ffef481beea1e4b8ca518a558cfb6d28772cd49eefa38",
+      "test_outputs.py": "79e03103449d4aaeb93c00588a892dfaa2b6527d4a98a6f97e7ab6877529e033"
+     },
+     "missing_output_contract": {
+      "amendment": "Amendment 2, owner approval 2026-11-13T03:53Z",
+      "calibration_evidence_sha256": "2854332e207c951ef919e75e291503691022b2404eeec5316e81a5e512eb7a17",
+      "diagnostic_normalization": "python-test-object-address-v1",
+      "error_signatures": [
+       "ab1a2d22c855ba086fae5480b635f0ab373cafd2f2079e36cef7ca0cea58de72",
+       "b5271d4db04cd4c61fca75e4e5ffbc8fe7c86fce996cb1385ce65404d99d6e99",
+       "bcf2198362beb408e1087bc044dd4366fa818e2a2e5991616c02619166129d12"
+      ],
+      "evidence_kind": "model_free_assigned_instance_native_negative_preflight",
+      "family": "court-form-filling",
+      "grader_hashes": {
+       "test.sh": "3b737fad7a00d6b8f63ffef481beea1e4b8ca518a558cfb6d28772cd49eefa38",
+       "test_outputs.py": "79e03103449d4aaeb93c00588a892dfaa2b6527d4a98a6f97e7ab6877529e033"
+      },
+      "instance_id": "court-form-filling-6",
+      "interpretation": "Exact output-absence setup diagnostics from a model-free control; unrelated setup errors remain infrastructure.",
+      "policy": "native-pytest-junit-v1",
+      "required_absent_paths": [
+       "/root/sc100-filled.pdf"
+      ],
+      "review_status": "approved_source_bound_missing_output"
+     },
+     "required_output_paths": [
+      "/root/sc100-filled.pdf"
+     ]
+    },
+    "enterprise-information-search/enterprise-information-search-4": {
+     "expected_tests": 4,
+     "grader_hashes": {
+      "test.sh": "e26daee2de02446ae541140c19d4616cc85818bb3291713657e2bd360db6248a",
+      "test_outputs.py": "b308428530457d4175932203931e81a304b2696c706f9a17cfcd6314c6e643e9"
+     },
+     "required_output_paths": [
+      "/root/answer.json"
+     ]
+    },
+    "enterprise-information-search/enterprise-information-search-5": {
+     "expected_tests": 4,
+     "grader_hashes": {
+      "test.sh": "e26daee2de02446ae541140c19d4616cc85818bb3291713657e2bd360db6248a",
+      "test_outputs.py": "407f26dca374cf9afaaf39ef9b6df1a597e6cd96de9974fabe42d9f203d485ca"
+     },
+     "required_output_paths": [
+      "/root/answer.json"
+     ]
+    },
+    "enterprise-information-search/enterprise-information-search-6": {
+     "expected_tests": 4,
+     "grader_hashes": {
+      "test.sh": "e26daee2de02446ae541140c19d4616cc85818bb3291713657e2bd360db6248a",
+      "test_outputs.py": "aa6e9cd61b750e3aa03835d8d40a4176cf42840cf4c33eaf60e4fa0a406d6030"
+     },
+     "required_output_paths": [
+      "/root/answer.json"
+     ]
+    },
+    "offer-letter-generator/offer-letter-generator-4": {
+     "expected_tests": 29,
+     "grader_hashes": {
+      "test.sh": "7f506a7694af94ec163d237d8765a09b1d6e0766e5ae422df9a44d472a7cc49c",
+      "test_outputs.py": "86cab2d0e67ecc1a76f41bbc4222cb4669d8b69041b075089d5f29d1fb86cc4b"
+     },
+     "missing_output_contract": {
+      "amendment": "Amendment 2, owner approval 2026-11-13T03:53Z",
+      "calibration_evidence_sha256": "a2215e015417183505837726f391fc492b22b8400b22c7cba26d82e2b00832f7",
+      "diagnostic_normalization": "python-test-object-address-v1",
+      "error_signatures": [
+       "9a8d71b3b374e6c7ae8485c91ee7dc07b83cdde522f95de6198c3e4fbb6a0e7c"
+      ],
+      "evidence_kind": "model_free_assigned_instance_native_negative_preflight",
+      "family": "offer-letter-generator",
+      "grader_hashes": {
+       "test.sh": "7f506a7694af94ec163d237d8765a09b1d6e0766e5ae422df9a44d472a7cc49c",
+       "test_outputs.py": "86cab2d0e67ecc1a76f41bbc4222cb4669d8b69041b075089d5f29d1fb86cc4b"
+      },
+      "instance_id": "offer-letter-generator-4",
+      "interpretation": "Exact output-absence setup diagnostics from a model-free control; unrelated setup errors remain infrastructure.",
+      "policy": "native-pytest-junit-v1",
+      "required_absent_paths": [
+       "/root/offer_letter_filled.docx"
+      ],
+      "review_status": "approved_source_bound_missing_output"
+     },
+     "required_output_paths": [
+      "/root/offer_letter_filled.docx"
+     ]
+    },
+    "offer-letter-generator/offer-letter-generator-5": {
+     "expected_tests": 29,
+     "grader_hashes": {
+      "test.sh": "7f506a7694af94ec163d237d8765a09b1d6e0766e5ae422df9a44d472a7cc49c",
+      "test_outputs.py": "86cab2d0e67ecc1a76f41bbc4222cb4669d8b69041b075089d5f29d1fb86cc4b"
+     },
+     "missing_output_contract": {
+      "amendment": "Amendment 2, owner approval 2026-11-13T03:53Z",
+      "calibration_evidence_sha256": "71141cf2c9ecf39c8a3c0b065df725767b220d2d5deff4efd87391ac8c03f9b2",
+      "diagnostic_normalization": "python-test-object-address-v1",
+      "error_signatures": [
+       "9a8d71b3b374e6c7ae8485c91ee7dc07b83cdde522f95de6198c3e4fbb6a0e7c"
+      ],
+      "evidence_kind": "model_free_assigned_instance_native_negative_preflight",
+      "family": "offer-letter-generator",
+      "grader_hashes": {
+       "test.sh": "7f506a7694af94ec163d237d8765a09b1d6e0766e5ae422df9a44d472a7cc49c",
+       "test_outputs.py": "86cab2d0e67ecc1a76f41bbc4222cb4669d8b69041b075089d5f29d1fb86cc4b"
+      },
+      "instance_id": "offer-letter-generator-5",
+      "interpretation": "Exact output-absence setup diagnostics from a model-free control; unrelated setup errors remain infrastructure.",
+      "policy": "native-pytest-junit-v1",
+      "required_absent_paths": [
+       "/root/offer_letter_filled.docx"
+      ],
+      "review_status": "approved_source_bound_missing_output"
+     },
+     "required_output_paths": [
+      "/root/offer_letter_filled.docx"
+     ]
+    },
+    "offer-letter-generator/offer-letter-generator-6": {
+     "expected_tests": 25,
+     "grader_hashes": {
+      "test.sh": "7f506a7694af94ec163d237d8765a09b1d6e0766e5ae422df9a44d472a7cc49c",
+      "test_outputs.py": "c47c7e0c5294c7dbde3b6ec6dde37bdf2ec6f3355425cba17d6aa2a342295922"
+     },
+     "missing_output_contract": {
+      "amendment": "Amendment 2, owner approval 2026-11-13T03:53Z",
+      "calibration_evidence_sha256": "ae8ae8be0ddf8e77a6e17af0a71c96a431b203fc3f1a72ef2d78a214c9ece917",
+      "diagnostic_normalization": "python-test-object-address-v1",
+      "error_signatures": [
+       "68d9aff14e78155ab422b3bc6f8e04e806a780a2a25db0eae6dbeada9230938d"
+      ],
+      "evidence_kind": "model_free_assigned_instance_native_negative_preflight",
+      "family": "offer-letter-generator",
+      "grader_hashes": {
+       "test.sh": "7f506a7694af94ec163d237d8765a09b1d6e0766e5ae422df9a44d472a7cc49c",
+       "test_outputs.py": "c47c7e0c5294c7dbde3b6ec6dde37bdf2ec6f3355425cba17d6aa2a342295922"
+      },
+      "instance_id": "offer-letter-generator-6",
+      "interpretation": "Exact output-absence setup diagnostics from a model-free control; unrelated setup errors remain infrastructure.",
+      "policy": "native-pytest-junit-v1",
+      "required_absent_paths": [
+       "/root/offer_letter_filled.docx"
+      ],
+      "review_status": "approved_source_bound_missing_output"
+     },
+     "required_output_paths": [
+      "/root/offer_letter_filled.docx"
+     ]
+    },
+    "travel-planning/travel-planning-4": {
+     "expected_tests": 11,
+     "grader_hashes": {
+      "test.sh": "9c5e21df41442e611c22603234b40612681d722265d9005d8b8df6b678400d1a",
+      "test_outputs.py": "f8fd77e080ee9960b75cb2f54af202105af1a70f0df797a10e2c296677255a02"
+     },
+     "required_output_paths": [
+      "/app/output/itinerary.json"
+     ]
+    },
+    "travel-planning/travel-planning-5": {
+     "expected_tests": 11,
+     "grader_hashes": {
+      "test.sh": "9c5e21df41442e611c22603234b40612681d722265d9005d8b8df6b678400d1a",
+      "test_outputs.py": "996978db3a4d469afa5949857bc0669740b4927f1eda39500a8e8853bdc5b727"
+     },
+     "required_output_paths": [
+      "/app/output/itinerary.json"
+     ]
+    },
+    "video-object-counting/video-object-counting-4": {
+     "expected_tests": 3,
+     "grader_hashes": {
+      "expected_output.csv": "197b85c1052128b4894f3f8da8602abdee2222de20cab210ee5b0d1e43ee4b40",
+      "test.sh": "87b8b329bfa325d3e0d49b5db5de8110eda240617326398ee94e409bba412783",
+      "test_outputs.py": "455d30197ca4d2bf85952810e54e9ed85d32dad3ea59d7b9e4fd31ca1907e1f6"
+     },
+     "required_output_paths": [
+      "/root/counting_results.csv"
+     ]
+    },
+    "video-object-counting/video-object-counting-5": {
+     "expected_tests": 3,
+     "grader_hashes": {
+      "expected_output.csv": "a81b6859a1d5b4d5554191227f383e06b938e9b5e19392f240310e023e1672e1",
+      "test.sh": "87b8b329bfa325d3e0d49b5db5de8110eda240617326398ee94e409bba412783",
+      "test_outputs.py": "86a24bc527b1adad75aa8921d55713ba92cb2978ee66ce01cc4f9b20a92d18eb"
+     },
+     "required_output_paths": [
+      "/root/counting_results.csv"
+     ]
+    }
+   },
+   "native_skip_rule": "followup-amendment-3-skips-count-as-not-passed-v1"
+  },
+  "train": {
+   "campaign_id": "followup-confirmatory-v1",
+   "cpus": 4,
+   "id": "native-pytest-junit-v1",
+   "memory": "4g",
+   "protocol_sha256": "24c2204dbc243fcdd11097886902d7fb592f105cbc9d76e62a76110cbb8a7a9c",
+   "scope": "formal_calibration",
+   "storage": {
+    "id": "verified-oci-cas-v1",
+    "minimum_free_bytes": 21474836480,
+    "receipt_quota_bytes": 67108864,
+    "receipts_path": "/opt/followup/artifacts/receipts",
+    "remove_verified_raw_duplicate": true,
+    "scratch_path": "/opt/followup/artifacts/scratch",
+    "scratch_quota_bytes": 68719476736,
+    "store_path": "/opt/followup/artifacts/cas",
+    "store_quota_bytes": 107374182400
+   },
+   "tasks": {
+    "anthropic-poster-design/anthropic-poster-design-1": {
+     "expected_tests": 6,
+     "grader_hashes": {
+      "test.sh": "c4d5d6afaea6206627fd59a5a369f30ca62d567cf0847c21168900baca12276a",
+      "test_outputs.py": "240ae4f0e60772bbbfe5acd6ed83d6042743b0974e023c51277c8db87be8adc0"
+     },
+     "required_output_paths": [
+      "/root/design_parameters.json",
+      "/root/nova_technical_poster.png"
+     ]
+    },
+    "chinese-poem-generator/chinese-poem-generator-1": {
+     "expected_tests": 6,
+     "grader_hashes": {
+      "test.sh": "c5fc058d1c372ab4040fc31a1462e434a104de6b9d148c228978121bff8d4ef9",
+      "test_outputs.py": "f883dbd46c65e6f305498bf9bc2dbbcbec3fbec06d3d993fad50ced0bc7764a5"
+     },
+     "required_output_paths": [
+      "/root/poem.txt"
+     ]
+    },
+    "court-form-filling/court-form-filling-1": {
+     "expected_tests": 47,
+     "grader_hashes": {
+      "test.sh": "3b737fad7a00d6b8f63ffef481beea1e4b8ca518a558cfb6d28772cd49eefa38",
+      "test_outputs.py": "cccc72ef7d553f645a885ad6b921d8401807a7ccf465eaa7ee50ed6e34a0ca6e"
+     },
+     "missing_output_contract": {
+      "amendment": "Amendment 2, owner approval 2026-11-13T03:53Z",
+      "calibration_evidence_sha256": "497a70bce5e44db279eb47302d4d6c23f9796f25334585e91b9910689ad30bdd",
+      "diagnostic_normalization": "python-test-object-address-v1",
+      "error_signatures": [
+       "ab1a2d22c855ba086fae5480b635f0ab373cafd2f2079e36cef7ca0cea58de72",
+       "b5271d4db04cd4c61fca75e4e5ffbc8fe7c86fce996cb1385ce65404d99d6e99",
+       "bcf2198362beb408e1087bc044dd4366fa818e2a2e5991616c02619166129d12"
+      ],
+      "evidence_kind": "model_free_assigned_instance_native_negative_preflight",
+      "family": "court-form-filling",
+      "grader_hashes": {
+       "test.sh": "3b737fad7a00d6b8f63ffef481beea1e4b8ca518a558cfb6d28772cd49eefa38",
+       "test_outputs.py": "cccc72ef7d553f645a885ad6b921d8401807a7ccf465eaa7ee50ed6e34a0ca6e"
+      },
+      "instance_id": "court-form-filling-1",
+      "interpretation": "Exact output-absence setup diagnostics from a model-free control; unrelated setup errors remain infrastructure.",
+      "policy": "native-pytest-junit-v1",
+      "required_absent_paths": [
+       "/root/sc100-filled.pdf"
+      ],
+      "review_status": "approved_source_bound_missing_output"
+     },
+     "required_output_paths": [
+      "/root/sc100-filled.pdf"
+     ]
+    },
+    "enterprise-information-search/enterprise-information-search-1": {
+     "expected_tests": 4,
+     "grader_hashes": {
+      "test.sh": "e26daee2de02446ae541140c19d4616cc85818bb3291713657e2bd360db6248a",
+      "test_outputs.py": "4d0d203df5b91b4d026bd237c44999dea79c4230e97538e92a342aabc5070886"
+     },
+     "required_output_paths": [
+      "/root/answer.json"
+     ]
+    },
+    "offer-letter-generator/offer-letter-generator-1": {
+     "expected_tests": 25,
+     "grader_hashes": {
+      "test.sh": "7f506a7694af94ec163d237d8765a09b1d6e0766e5ae422df9a44d472a7cc49c",
+      "test_outputs.py": "c47c7e0c5294c7dbde3b6ec6dde37bdf2ec6f3355425cba17d6aa2a342295922"
+     },
+     "missing_output_contract": {
+      "amendment": "Amendment 2, owner approval 2026-11-13T03:53Z",
+      "calibration_evidence_sha256": "4492f1070dc01b78f741fcf3f8002e30e0c09f834e4740e11bc43c6d390f4d93",
+      "diagnostic_normalization": "python-test-object-address-v1",
+      "error_signatures": [
+       "68d9aff14e78155ab422b3bc6f8e04e806a780a2a25db0eae6dbeada9230938d"
+      ],
+      "evidence_kind": "model_free_assigned_instance_native_negative_preflight",
+      "family": "offer-letter-generator",
+      "grader_hashes": {
+       "test.sh": "7f506a7694af94ec163d237d8765a09b1d6e0766e5ae422df9a44d472a7cc49c",
+       "test_outputs.py": "c47c7e0c5294c7dbde3b6ec6dde37bdf2ec6f3355425cba17d6aa2a342295922"
+      },
+      "instance_id": "offer-letter-generator-1",
+      "interpretation": "Exact output-absence setup diagnostics from a model-free control; unrelated setup errors remain infrastructure.",
+      "policy": "native-pytest-junit-v1",
+      "required_absent_paths": [
+       "/root/offer_letter_filled.docx"
+      ],
+      "review_status": "approved_source_bound_missing_output"
+     },
+     "required_output_paths": [
+      "/root/offer_letter_filled.docx"
+     ]
+    },
+    "travel-planning/travel-planning-1": {
+     "expected_tests": 11,
+     "grader_hashes": {
+      "test.sh": "9c5e21df41442e611c22603234b40612681d722265d9005d8b8df6b678400d1a",
+      "test_outputs.py": "542cf3269224bae39121f2cf1b1889203710688c98e4d3990226a372c9c605ae"
+     },
+     "required_output_paths": [
+      "/app/output/itinerary.json"
+     ]
+    },
+    "video-object-counting/video-object-counting-1": {
+     "expected_tests": 3,
+     "grader_hashes": {
+      "expected_output.csv": "3058aa64356a8f071a2462027ef4486e10cdf06aa3d787f985b8f4acc64f0dc5",
+      "test.sh": "87b8b329bfa325d3e0d49b5db5de8110eda240617326398ee94e409bba412783",
+      "test_outputs.py": "ae5d42a115f0a2075d738bc387345829561d1ea48f906abf1f2b3a6852f90097"
+     },
+     "required_output_paths": [
+      "/root/counting_results.csv"
+     ]
+    }
+   },
+   "native_skip_rule": "followup-amendment-3-skips-count-as-not-passed-v1"
+  }
+ },
+ "frozen_protocol_sha256": "24c2204dbc243fcdd11097886902d7fb592f105cbc9d76e62a76110cbb8a7a9c",
+ "runtime": {
+  "build_cache_from": [],
+  "build_cpus": 2,
+  "build_memory": "4g",
+  "cpus": 4,
+  "deepseek_mapping": {
+   "allowed_tools": [
+    "Bash",
+    "Edit",
+    "Glob",
+    "Grep",
+    "Read",
+    "Skill",
+    "Write"
+   ],
+   "cli_path": "/usr/local/bin/claude",
+   "cli_version": "2.1.296",
+   "config_directory": "/tmp/capstudy-solver-home/.claude",
+   "disallowed_tools": [
+    "Agent",
+    "Task",
+    "SlashCommand",
+    "WebFetch",
+    "WebSearch"
+   ],
+   "fixed_environment": {
+    "CLAUDE_CODE_AUTO_CONNECT_IDE": "false",
+    "CLAUDE_CODE_DISABLE_AUTO_MEMORY": "1",
+    "CLAUDE_CODE_DISABLE_FEEDBACK_SURVEY": "1",
+    "CLAUDE_CODE_DISABLE_NONESSENTIAL_TRAFFIC": "1",
+    "CLAUDE_CODE_DISABLE_TERMINAL_TITLE": "1",
+    "CLAUDE_CODE_MAX_OUTPUT_TOKENS": "16384",
+    "CLAUDE_CODE_MAX_RETRIES": "0",
+    "CLAUDE_CONFIG_DIR": "/tmp/capstudy-solver-home/.claude",
+    "DISABLE_AUTOUPDATER": "1",
+    "DISABLE_DOCTOR_COMMAND": "1",
+    "DISABLE_ERROR_REPORTING": "1",
+    "DISABLE_GROWTHBOOK": "1",
+    "DISABLE_LOGIN_COMMAND": "1",
+    "DISABLE_LOGOUT_COMMAND": "1",
+    "DISABLE_TELEMETRY": "1",
+    "DISABLE_UPDATES": "1",
+    "DO_NOT_TRACK": "1",
+    "ENABLE_CLAUDEAI_MCP_SERVERS": "false",
+    "HOME": "/tmp/capstudy-solver-home",
+    "LANG": "C.UTF-8",
+    "PATH": "/usr/local/bin:/usr/bin:/bin"
+   },
+   "formal_execution_ready": false,
+   "implementation_sha256": "d9efbd12e3e8e843a989e0ced10b216d858ebf07c367fef90496f6205d6cd900",
+   "max_output_tokens": 16384,
+   "max_retries": 0,
+   "max_turns": 100,
+   "mock_capture_sha256": "602dfd07836b69c3e70ffac7447a65c128419cee0a9d515a522ca3566c0257ef",
+   "model_aliases": {
+    "ANTHROPIC_DEFAULT_HAIKU_MODEL": "deepseek-flash",
+    "ANTHROPIC_DEFAULT_OPUS_MODEL": "deepseek-flash",
+    "ANTHROPIC_DEFAULT_SONNET_MODEL": "deepseek-flash",
+    "ANTHROPIC_MODEL": "deepseek-flash",
+    "CLAUDE_CODE_SUBAGENT_MODEL": "deepseek-flash"
+   },
+   "model_id": "deepseek-flash",
+   "network_policy_sha256": "a9bdeba04c27b74131b76ddf5167ec9ab112a899f0fb49409626f257e0d85593",
+   "relay_token_env": "CAPSTUDY_DEEPSEEK_RELAY_TOKEN",
+   "relay_url_env": "CAPSTUDY_DEEPSEEK_RELAY_URL",
+   "relay_url_sha256": "e3a7680826a5076cc388b4fa48398476b2ad22f5ce120d0da71b2c43aae80915",
+   "route": "private-deepseek-anthropic-relay",
+   "schema_version": 1,
+   "skill_directory": "/tmp/capstudy-solver-home/.claude/skills",
+   "skill_loading_directive": "Before working on the task, invoke each installed task-specific skill listed in the available skills. If no task-specific skills are installed, proceed without one.",
+   "skill_loading_policy": "invoke-installed-before-task-v1",
+   "solver_home": "/tmp/capstudy-solver-home"
+  },
+  "dependency_layer_file": "/opt/followup/repo/configs/runtime/node24-claude2-amd64.layer",
+  "dependency_layer_sha256": "3b2871ab78c1c001c36814a5c88c9decc8d066888836ddc24adcdf3440fcabb7",
+  "execution_profile": "native-task-limits-v1",
+  "launch_guard": {
+   "disk_paths": [
+    "/opt/followup",
+    "/var/lib/docker"
+   ],
+   "minimum_free_bytes": 21474836480,
+   "timeout_seconds": 10800
+  },
+  "memory": "4g",
+  "network": "capstudy-gdp-pilot",
+  "node_version": "24.11.1",
+  "staging_policy": "single-active-instance-v1",
+  "tool_observation": {
+   "implementation_sha256": "340dc7cfcf688c71aac5ffe3421b1840144c20aa57b7d21de35c59bf0085856d",
+   "policy": "explicit-text-only-tool-result-error-v2"
+  }
+ },
+ "selected_before_test_manifest_id": "followup-confirmatory-v1-selection",
+ "tool_policy": {
+  "allowed_tools": [
+   "Bash",
+   "Read",
+   "Write",
+   "Edit",
+   "Glob",
+   "Grep",
+   "Skill"
+  ],
+  "disallowed_tools": [
+   "Agent",
+   "Task",
+   "SlashCommand",
+   "WebFetch",
+   "WebSearch"
+  ],
+  "network": "solver internal bridge, only private metered relay; native build/grader dependency access separate",
+  "skill_loading_policy": "invoke-installed-before-task-v1"
+ }
+}
